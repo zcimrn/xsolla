@@ -18,5 +18,7 @@ services:
             PORT: 80
             API_PREFIX: /api/v1
 
+        command: /bin/sh -c "sleep 5 && node main.js"
+
         ports:
         -   80:80
