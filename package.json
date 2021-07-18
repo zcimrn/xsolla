@@ -1,0 +1,8 @@
+{
+    "name": "xsolla",
+    "type": "module",
+    "dependencies": {
+        "fastify": "^3.19.1",
+        "pg": "^8.6.0"
+    }
+}

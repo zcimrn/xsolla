@@ -1,0 +1,11 @@
+*
+!.gitignore
+!compose.yml
+!.dockerignore
+!Dockerfile
+!package.json
+!package-lock.json
+!main.js
+!database.js
+!schemas.js
+!readme.md

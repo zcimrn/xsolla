@@ -1,0 +1,22 @@
+services:
+    postgres:
+        image: postgres:alpine
+        environment:
+            POSTGRES_PASSWORD: some-postgres-password
+
+    server:
+        depends_on:
+        -   postgres
+
+        build: .
+        environment:
+            DB_HOST: postgres
+            DB_PORT: 5432
+            DB_NAME: postgres
+            DB_USER: postgres
+            DB_PASSWORD: some-postgres-password
+            PORT: 80
+            API_PREFIX: /api/v1
+
+        ports:
+        -   80:80

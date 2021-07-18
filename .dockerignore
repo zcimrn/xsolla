@@ -1,0 +1,6 @@
+*
+!package.json
+!package-lock.json
+!main.js
+!database.js
+!schemas.js
